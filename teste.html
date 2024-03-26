@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1rem;
+            background-color: red;
+        }
+
+        .container {
+            display: flex;
+            max-width: 90%;
+            min-width: 50%;
+        }
+
+        .left,
+        .right,
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left {
+            background-color: cadetblue;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px
+        }
+
+        .right {
+            background-color: aqua;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="left">
+            <h2>Bem vindo</h2>
+            <p>Este é o sistema de<br>
+                apoio ao cliente</p>
+        </div>
+        <div class="right">
+            <h2>Para entrar no sistema</h2>
+            <p>Informe seus dados e<br>
+                clique no botão logar</p>
+            <form>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <button type="submit">Logar</button>
+            </form>
+            <p>Esqueci a senha</p>
+        </div>
+    </div>
+</body>
+
+</html>
